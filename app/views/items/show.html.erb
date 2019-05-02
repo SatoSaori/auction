@@ -4,3 +4,6 @@
 <p><b>出品者:</b><%= @item.seller %></p>
 <p><b>電子メール:</b><%= @item.email %></p>
 <p><%= image_tag @item.image_url %></p>
+
+<!--編集のリンクを追加して、クリック後に編集画面にとぶように-->
+<%= link_to "編集する",  edit_item_path(@item)%>
